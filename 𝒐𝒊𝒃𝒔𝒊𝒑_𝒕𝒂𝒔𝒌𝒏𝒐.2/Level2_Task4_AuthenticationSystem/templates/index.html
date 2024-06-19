@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+<div class="auth-cont">
+    {% if username %}
+    <p style="color: forestgreen;">Welcome <i>{{username}}</i></p>
+    <div class="ath-btn-cont">
+        <a href="{{ url_for('logout') }}"><button class="btn">Logout</button></a>
+    </div>
+    <div class="abt-tsk">
+        <h2>About Project</h2>
+        <p><strong>Project: Basic Login Authentication System</strong></p>
+        <ol>
+            <li>
+                <strong>Project Overview:</strong>
+                <p>This is a simple login authentication system using Flask(a Python microframework), that allows users
+                    to register, login, and access a secured page.</p>
+            </li>
+            <li style="margin-top: 10px;">
+                <strong>Features:</strong>
+                <ul>
+                    <li>The system has a user registration feature where users can sign up by providing a useranme and
+                        password as login credentials and other additional informations.</li>
+                    <li>The system stores user information securely(passwords are encrypted).</li>
+                    <li>The system has a login feature where users can enter correct username and password to access the
+                        secured page or content.</li>
+                    <li>The secured page is only accessible to the logged in users.</li>
+                </ul>
+            </li>
+            <li style="margin-top: 10px;">
+                <strong>Tools and Technologies:</strong>
+                <ul>The system is developed on Python programming language implementing Flask(Python Microframework).
+                </ul>
+                <ul>All the user data are being stored in Sqlite3 database.</ul>
+            </li>
+            <li style="margin-top: 10px;">
+                <strong>Implementation Steps:</strong>
+                <ol>
+                    <li>User Registration:</li>
+                    <ul>
+                        <li>User is prompted to register by providing - first name, last name, email, username and
+                            password.</li>
+                        <li>Upon form submissions the input data will be compared and searched if there is any user with
+                            same username or email. If any existing user is found, the user will be returned back to the
+                            registration page, or the user can simply login.</li>
+                    </ul>
+                    <li>Password Encryption:</li>
+                    <ul>
+                        <li>The password created by the user will be encrypted for security puposes.</li>
+                        <li>All the user data then is stored into Sqlite3 database.</li>
+                    </ul>
+                    <li>User Login:</li>
+                    <ul>
+                        <li>After successful registration the user will be prompted to login page. User can login by
+                            enterring correct username and password.</li>
+                        <li>The entered username is found valid, the entered password is compared with the stored
+                            encrypted password. If they match, the user gets logged in.</li>
+                    </ul>
+                    <li>Secured Page:</li>
+                    <ul>
+                        <li>Unauthorised users cannot access the page content.</li>
+                        <li>Once user is logged in, the login and signup pages will be inaccessible.</li>
+                    </ul>
+                </ol>
+            </li>
+            <li style="margin-top: 10px;">
+                <strong>Error Handling:</strong>
+                <ul>
+                    <li>Implemented proper error handling to handle cases like incorrect login credentials, already
+                        registered users, etc.</li>
+                </ul>
+            </li>
+            <li style="margin-top: 10px;">
+                <strong>Testing:</strong>
+                <ul>
+                    <li>This system is throughly tested to ensure that it works as expected, covering both positive and
+                        negative scenarios.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    {% else %}
+    <p>Login or Register to know about the Task</p>
+    <div class="nath-btn-cont">
+        <a href="{{ url_for('login') }}"><button class="btn">Login</button></a> or
+        <a href="/user-signup"><button class="btn">Sign Up</button></a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

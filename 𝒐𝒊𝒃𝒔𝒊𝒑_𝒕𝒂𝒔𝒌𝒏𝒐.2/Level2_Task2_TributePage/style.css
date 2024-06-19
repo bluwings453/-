@@ -1,0 +1,75 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.first-section, .about, .award-section, .quote-section, .playlist-section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.first-section h1, .about h1, .award-section h1, .quote-section h2, .playlist-section h1 {
+    color: #d9534f;
+}
+
+.about img {
+    width: 100%;
+    max-width: 200px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.about div {
+    overflow: hidden;
+}
+
+.award-section h2 {
+    color: #5bc0de;
+    margin-top: 20px;
+}
+
+.award {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #5bc0de;
+}
+
+.quote-section h2 {
+    font-style: italic;
+}
+
+.quote-section p {
+    text-align: right;
+    font-weight: bold;
+}
+
+.playlist-section iframe {
+    width: 100%;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #292b2c;
+    color: white;
+}
+
+footer a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

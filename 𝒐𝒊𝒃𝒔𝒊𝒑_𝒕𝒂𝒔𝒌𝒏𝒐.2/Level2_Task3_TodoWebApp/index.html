@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO WebApp | OIBSIP Level-2 Task-3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>TODOIST MANAGER</h1>
+            </div>
+            <div>
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="todo-container">
+            <div class="row">
+                <input type="text" id="inputField" placeholder="Enter task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <div class="empty-list" id="emptyListScreen">
+                <p>No tasks added +</p>
+            </div>
+            <ul id="listContainer">
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

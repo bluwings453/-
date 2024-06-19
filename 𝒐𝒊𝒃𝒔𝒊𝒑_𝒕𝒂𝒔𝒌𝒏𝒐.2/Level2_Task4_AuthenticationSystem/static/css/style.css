@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: #a013d3;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header h2 {
+    color: #f5c836;
+    font-size: 40px;
+    /* font-weight: normal; */
+}
+
+.header p {
+    color: #dac616;
+    font-size: 30px;
+}
+
+.auth-cont {
+    font-size: 23px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nath-btn-cont {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #a013d3;
+    border: 2px solid #7c7272;
+    border-radius: 20px;
+    height: 37px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #7c7272;
+}
+
+.form-cont {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* .form-cont button {
+    background-color: #1e84f3;
+    border: 2px solid #7c7272;
+    border-radius: 20px;
+    height: 37px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+} */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form input {
+    height: 50px;
+    width: 300px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px double #7c7373;
+    border-radius: 10px;
+}
+
+.msg-screen {
+    border: 2px solid rgb(109, 98, 98);
+    width: 300px;
+    height: auto;
+    color: #413e3e;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.msg-success {
+    background-color: #96f1a6;
+}
+
+.msg-error {
+    background-color: #eb8f8f;
+}
+
+.abt-tsk {
+    padding-left: 30px;
+    border: 2px solid green;
+    text-align: left;
+    width: 90vw;
+    height: auto;
+    margin: 20px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.abt-tsk h2 {
+    color: blueviolet;
+}
+
+.abt-tsk ul, ol, li, p {
+    font-size: 20px;
+}

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #eef0c5; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100;
+    min-height: 100vh;
+    background: linear-gradient(1deg, #44e1c0, #8338f7);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    padding: 20px 0;
+    font-size: 23px;
+}
+
+.header h1 {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.header img {
+    height: 100px;
+}
+
+.todo-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#d9ece9;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #9b61ef;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 14px;
+}
+
+button:hover {
+    border: 1px solid #22803b;
+    background-color: #ffffff;
+    color: rgb(236, 201, 25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before {
+
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    /* ; */
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url();
+}
+
+ul li span {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    color: crimson;
+}
+
+ul li span:hover {
+    border: 1px solid crimson;
+    border-radius: 10px;
+}
+
+.empty-list {
+    margin: 20px auto;
+    padding: 20px;
+    height: 50px;
+    width: 50%;
+    border: 2px solid #555555;
+    border-radius: 20px;
+    display: none;
+}
