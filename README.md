@@ -1,5 +1,5 @@
 🌐 Web Development and Designing Internship 🌐
-The web development internship offers practical work experience and an introduction to creating and improving web-based systems. This internship will involve challenging opportunities and real-world projects. It’s a fantastic opportunity to gain hands-on experience in the web development field with an award-winning innovation team. 🚀
+-The web development internship offers practical work experience and an introduction to creating and improving web-based systems. This internship will involve challenging opportunities and real-world projects. It’s a fantastic opportunity to gain hands-on experience in the web development field with an award-winning innovation team. 🚀
 
 About the Company 🏢
 At Oasis Infobyte, we develop personalized software, turning the digital dreams of our clients into reality. We work closely with our users throughout the development process to ensure alignment with the end goals. We are committed to producing exceptional software for each of our clients.
